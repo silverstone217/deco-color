@@ -1,7 +1,6 @@
 # Générateur de Palette de Couleurs pour Intérieur
 
-![Palette Preview](./public/palette-screenshot.png)  
-_(Ajouter une capture d'écran ou gif de démonstration de ton appli ici)_
+![Palette Preview](./public/palette-screenshot.png)
 
 ---
 
@@ -39,15 +38,15 @@ L’utilisateur choisit un style (ex : moderne, scandinave, bohème, industriel.
 
 ### Prérequis
 
-- Node.js (version 18 ou supérieure recommandée)
+- Node.js (version 20 ou supérieure recommandée)
 - npm ou yarn
 
 ### Étapes
 
-`   git clone https://github.com/ton-utilisateur/ton-repo.git
-    cd ton-repo
-    npm install
-    npm run dev`
+git clone https://github.com/ton-utilisateur/ton-repo.git
+cd ton-repo
+npm install
+npm run dev`
 
 Ouvre ensuite [http://localhost:3000](http://localhost:3000) dans ton navigateur pour tester l’application.
 
@@ -123,4 +122,3 @@ _Crée en 2025 avec ❤️ pour l’Intelligence Artificielle et le design inté
 ---
 
 # DECO-COLOR
-# deco-color

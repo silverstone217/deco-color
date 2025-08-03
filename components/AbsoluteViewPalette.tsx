@@ -30,6 +30,7 @@ const AbsoluteViewPalette = ({
   decoStyle,
   handleGenerateColors,
   loading,
+  setDecoStyle,
 }: Props) => {
   if (!palette || !decoStyle) return null;
 
@@ -53,7 +54,10 @@ Neutral: ${palette.neutral.value} (${palette.neutral.label})`;
         <button
           aria-label="Fermer la palette"
           className="absolute top-2 right-2 text-white hover:text-red-500 transition"
-          onClick={() => setShow(false)}
+          onClick={() => {
+            setShow(false);
+            setDecoStyle("");
+          }}
           type="button"
         >
           <X size={32} />

@@ -1,37 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Générateur de Palette de Couleurs pour Intérieur
 
-## Getting Started
+![Palette Preview](./public/palette-screenshot.png)  
+_(Ajouter une capture d'écran ou gif de démonstration de ton appli ici)_
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ce projet est un générateur de palettes de couleurs pour la décoration intérieure (maisons, espaces variés), basé sur l’intelligence artificielle. Il permet de créer des combinaisons harmonieuses et adaptées à différents styles de design d’intérieur.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+L’utilisateur choisit un style (ex : moderne, scandinave, bohème, industriel...) et l’IA génère une palette cohérente avec les codes couleurs en hexadécimal et le nom des couleurs. Le résultat est affiché avec une interface claire, épurée et responsive.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Technologies principales
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js 15** — Framework React pour un rendu côté serveur performant.
+- **TypeScript** — Typage statique pour plus de robustesse.
+- **AI & SDK @ai-sdk/gateway** — Intégration de l’intelligence artificielle pour la génération dynamique des palettes.
+- **Tailwind CSS** — Pour un design moderne, rapide et responsive.
+- **Vercel** — Hébergement et déploiement continu sur plateforme cloud.
+- **lucide-react** — Bibliothèque d’icônes React modernes et légères.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Fonctionnalités
 
-## Deploy on Vercel
+- Sélection intuitive parmi plusieurs styles d’intérieur populaires.
+- Génération automatique de palettes avec codes hexadécimaux et noms des couleurs.
+- Copie facile des codes couleurs et de la palette complète.
+- Interface utilisateur moderne, épurée, et adaptée aux mobiles et grands écrans.
+- Gestion des états de chargement et erreurs.
+- Routes Next.js sécurisées pour appels à l’API IA.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Installation et démarrage local
+
+### Prérequis
+
+- Node.js (version 18 ou supérieure recommandée)
+- npm ou yarn
+
+### Étapes
+
+`   git clone https://github.com/ton-utilisateur/ton-repo.git
+    cd ton-repo
+    npm install
+    npm run dev`
+
+Ouvre ensuite [http://localhost:3000](http://localhost:3000) dans ton navigateur pour tester l’application.
+
+---
+
+## Structure du projet
+
+- `/app` — Pages et routes Next.js (App Router).
+- `/components` — Composants React réutilisables (palette, alertes, boutons).
+- `/utils` — Fonctions utilitaires et données statiques (styles déco…).
+- `/lib` — Configuration et polices (ex : Rubik via Google Fonts).
+- `app/api` — Routes serveur pour génération IA (prompt, traitement JSON).
+
+---
+
+## Déploiement
+
+Le projet est prévu pour être déployé sur **Vercel** :
+
+- Assure-toi que tes clefs d’API IA sont correctement configurées dans les variables d’environnement Vercel.
+- Utilise la commande standard :
+  vercel --prod
+
+ou fais un push sur ta branche principale qui déclenchera un déploiement automatique.
+
+---
+
+## Personnalisation
+
+- Ajoute ou modifie les styles de déco proposés (boutons de styles) dans `/utils/buttonsDataInfo.ts`.
+- Adapte le prompt AI pour ajuster les formats ou le style des palettes.
+- Modifie les composants UI avec Tailwind pour changer l’apparence des cartes couleurs, boutons, etc.
+
+---
+
+## Contribuer
+
+Les contributions sont les bienvenues :
+
+- Propose des améliorations, nouvelles fonctionnalités ou corrections de bugs.
+- Ouvre une issue pour discuter avant une grosse modification.
+- Soumets un Pull Request avec une description claire.
+
+---
+
+## Licence
+
+Ce projet est distribué sous la licence MIT.
+
+---
+
+## Remerciements
+
+Merci aux équipes et communautés derrière :
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Lucide React](https://lucide.dev/)
+- [Vercel](https://vercel.com/)
+- L’API IA intégrée
+
+---
+
+## Contact
+
+Stephane Mfuni – [stiviggs217@gmail.com](mailto:stiviggs217@gmail.com)  
+Projet sur GitHub : [https://github.com/silverstone217/deco-color](https://github.com/silverstone217/deco-color)
+
+---
+
+_Crée en 2025 avec ❤️ pour l’Intelligence Artificielle et le design intérieur._
+
+---
+
+# DECO-COLOR
 # deco-color
